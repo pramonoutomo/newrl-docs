@@ -9,7 +9,7 @@ Newrl uses highly scalable proof of trust (PoT) protocol for consensus
 PoT uses the trust scores of participants as the primary input to arrive at consensus in a byzantine fault tolerant manner. It replaces the pure financial stake (as in proof of stake) with a trust score of network participants. This approach enables a richer assessment of the probability of a given node being dishonest. It also creates a stronger disincentive over time for a given node to turn dishonest, because trust scores are harder to earn than to lose. 
 Nodes participate in validating transactions and adding blocks - earning platform tokens and a higher probability of future selection for block addition for honest contributions. Conversely, for bad contributions or malicious behaviour, they get a sharp reduction in probability of future selection for block addition and also lose part of their deposited tokens. PoT has superior Byzantine Fault Tolerance because of its two-step confirmation of a block - first by a randomly selected committee and second by the rest of the network. Also, the validation in either case is not just based on simple majority but on trust score weighted assessment.
 
-## Overall Architecture for Implementing Proof of Trust
+### Transaction types
 
 The PoT protocol requires the underlying public blockchain to have some architectural specifics. For instance, the blockchain used should be state-based i.e. for validating any transaction, having the latest state is sufficient and each valid transaction updates the state. 
 The state can be changed by execution of transactions by each node locally. Transactions are of following types.
@@ -25,8 +25,6 @@ The state can be changed by execution of transactions by each node locally. Tran
 	
 Validation of a transaction is for its signatures as well as economics e.g. for a transfer transaction, the sender needs to have adequate balance.
 
-## Protocol functioning
-There are three types of computations carried out in a typical public blockchain - transaction validation, block creation and verification of a block upon its broadcast and reception by other nodes.
 
 ### Transaction handling
 
@@ -44,7 +42,7 @@ We assume the following at the end of the state update after the latest block in
 3. Select a validator for current block from within the committee randomly with previous block hash as the random seed. 
 Since the state is same for all participants, and the random seed is same, the selection of committee and block creator will be identical for all honest nodes.
 
-### Block creation by the minting node and broadcast to committee
+### Block creation by the block minting node and broadcast to committee
 
 The minting node is expected to create a block using the below-mentioned transactions.
 
