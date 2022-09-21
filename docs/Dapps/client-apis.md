@@ -3,7 +3,7 @@ sidebar_position: 4
 slug: /client-apis
 ---
 
-# Newrl Client APIs
+# Client APIs
 
 Newrl Dapps interact with the chain using API calls to public/public nodes. A list of public nodes available is listed on the Newrl website.
 Once the Dapp finish the prototyping phase, it's reccomended to use own nodes for querying and transaction submissions.
@@ -15,6 +15,8 @@ Newrl client exposes a few query APIs and two POST APIs for submitting transacti
 - [/get-block](client-apis#get-block)
 - [/get-balance](client-apis#get-balances)
 - [/sc-state](client-apis#sc-state)
+- [/submit-transaction](client-apis#submit-transaction)
+- [/get-trustscore-wallets](client-apis#get-trustscore-wallets)
 
 ### /get-block
 
