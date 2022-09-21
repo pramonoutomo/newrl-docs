@@ -63,6 +63,7 @@ The mining node broadcasts the block to the rest of the committee members with i
 
 ### Block format
 Each block in Newrl has the following format.
+```
 1. block_index - An integer
 2. proof	- NONCE for the block, set at 0 for all non-empty blocks and 42 for empty ones
 3. timestamp	- Time in seconds since the UNIX epoch
@@ -71,6 +72,7 @@ Each block in Newrl has the following format.
 6. transactions_hash	- Root hash of the transactions
 7. transactions_data	 - {standard transactions}
 8. receipts	- {receipts}
+```
 
 ### Block receiving and validation by other nodes in the committee
 When a committee member receives a block from the minting node, it first validates the block using reference to previous hash, current hash, index etc.
