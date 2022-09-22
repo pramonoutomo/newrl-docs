@@ -4,6 +4,11 @@ slug: /wallets
 ---
 
 
+# Wallets
+
+   This section describes on what a wallet is in the Newrl network and how to create and interact with Newrl network using it.
+
+   
 ## Wallets on Newrl
 
 A wallet in general is a set of keys that can be used to send, receive and track ownership of assets. 
