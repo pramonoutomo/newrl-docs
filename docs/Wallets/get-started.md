@@ -21,3 +21,5 @@ fund trasnfer or smart contract invocation. It is important to note that funds c
 A public key for wallet address derived from it would not give access to funds but would help in identifying the wallet, thus **it is ok to share public key** or wallet address across. If we consider a token transfer usecase,
  where a party wants to send money they need to know the receiving parties wallet address.
 
+ Wallets can be created and used by neuron app if on mobile or newrl wallet plugin/website if on desktop. For developers we have newrl librabry in both npm and pip repositoires. More on how to use these will be released soon. 
+
