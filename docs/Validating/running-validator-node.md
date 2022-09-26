@@ -10,7 +10,7 @@ At the launch time, the only configuration that needs to be specified is the sec
 ![AWSNewrl](/img/aws_newrl_image.png)
 
 ### Add Node wallet to chain
-Once the node is live, it's generated wallet public key can be obtained from the URL `/get-node-info`. The node's wallet need to be added on the chain with the help of a custodian or as a linked wallet from [Newrl wallet app](wallet.newrl.net).
+Once the node is live, it's generated wallet public key can be obtained from the URL `/get-node-info`. The node's wallet need to be added on the chain with the help of a custodian or as a linked wallet from [Newrl wallet app](https://wallet.newrl.net).
 Example: If node's public IP is 54.91.131.211, the url will be http://54.91.131.211:8420/get-node-info.
 
 ## From source code
