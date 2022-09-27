@@ -18,6 +18,14 @@ Newrl client exposes a few query APIs and two POST APIs for submitting transacti
 - [/submit-transaction](client-apis#submit-transaction)
 - [/get-trustscore-wallets](client-apis#get-trustscore-wallets)
 
+Please replace the port according to the network. Below is the table mentioning ports of each network.
+
+| Network | PORT |
+| ------ | ------ |
+| devnet | 8420
+| testnet| 8421
+| mainnet | 8456
+
 ### /get-block
 
 Returns the balance of the account of provided Pubkey
@@ -35,7 +43,7 @@ Returns the balance of the account of provided Pubkey
 Request:
 
 ```bash
-curl http://devnet.newrl.net:8420/get-block?block_index=50
+curl http://devnet.newrl.net:8421/get-block?block_index=50
 ```
 
 Result:
@@ -159,7 +167,7 @@ Request:
 
 ```bash
 curl -X 'GET' \
-  'http://3.230.172.119:8420/get-balances?balance_type=TOKEN_IN_WALLET&token_code=NWRL&wallet_address=0x61b1de29d392d7fd9be06f7c743275f966b6d507' \
+  'http://3.230.172.119:8421/get-balances?balance_type=TOKEN_IN_WALLET&token_code=NWRL&wallet_address=0x61b1de29d392d7fd9be06f7c743275f966b6d507' \
   -H 'accept: application/json'
 ```
 
@@ -193,7 +201,7 @@ Request:
 
 ```bash
 curl -X 'GET' \
-  'http://3.230.172.119:8420/get-balances?balance_type=TOKEN_IN_WALLET&token_code=NWRL&wallet_address=0x61b1de29d392d7fd9be06f7c743275f966b6d507' \
+  'http://3.230.172.119:8421/get-balances?balance_type=TOKEN_IN_WALLET&token_code=NWRL&wallet_address=0x61b1de29d392d7fd9be06f7c743275f966b6d507' \
   -H 'accept: application/json'
 ```
 
@@ -266,7 +274,7 @@ curl --header "Content-Type: application/json" \
     ]
 }
   ' \
-  http://devnet.newrl.net:8420/submit-transaction
+  http://devnet.newrl.net:8421/submit-transaction
 ```
 
 Result:
@@ -302,7 +310,7 @@ Request:
 
 ```bash
 curl -X 'GET' \
-  'http://34.205.131.228:8420/get-trustscore-wallets?src_wallet_address=0x667663f36ac08e78bbf259f1361f02dc7dad593b&dst_wallet_address=0xf38b0ad67bfff4d8aaac00192d0c8f6e9e5d1905' \
+  'http://34.205.131.228:8421/get-trustscore-wallets?src_wallet_address=0x667663f36ac08e78bbf259f1361f02dc7dad593b&dst_wallet_address=0xf38b0ad67bfff4d8aaac00192d0c8f6e9e5d1905' \
   -H 'accept: application/json'
 ```
 

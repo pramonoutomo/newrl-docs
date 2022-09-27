@@ -46,4 +46,4 @@ Staking is done using a transaction call to the Newrl Stake smart contract. The 
 ```
 
 Once staking transaction is submitted, the stake can be verified using the link 
-`http://devnet.newrl.net:8420/sc-state?table_name=stake_ledger&contract_address=ctcdb91798f3022dee388b7ad55eeea527f98caee4&unique_column=wallet_address&unique_value={wallet_to_stake}'`
+`http://devnet.newrl.net:8421/sc-state?table_name=stake_ledger&contract_address=ctcdb91798f3022dee388b7ad55eeea527f98caee4&unique_column=wallet_address&unique_value={wallet_to_stake}'`
