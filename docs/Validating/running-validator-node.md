@@ -18,7 +18,7 @@ A Newrl node can be instantly spawned using the pre-built Newrl Image on AWS.
 Please note that for testnet image name is : `Newrl Testnet Node - Ubuntu`. 
 At the launch time, the only configuration that needs to be specified is the security group to allow incoming connections on ports, refer table above on which port to open.
 
-1. In you aws console instances section click `Launch Instance`. (Change region to N.Virginia or Ohio as image is currently available in those)
+1. In your aws console instances section click `Launch Instance`. (Change region to N.Virginia or Ohio as image is currently available in those)
 2. In the launch instance page, Under application and OS images section click `Browse more AMIs`
 3. In search bar, type in `newrl testnet node`. 
 4. Under community AMI section, there should be an image under the name 
