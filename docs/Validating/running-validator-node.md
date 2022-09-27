@@ -61,4 +61,4 @@ scripts/start.sh testnet
 ```
 Screen session is used to let the node run in background when terminal is closed. 
 
-Note: The port 8456 for mainnet and 8421 if testnet should be publicly accessible on the instance. On AWS, this can be done by opening inbound port in the security group. For local installations, the router need to be configured to bypass symmetric NAT for the port 8456.
+Note: The port 8456 for mainnet and 8421 if testnet should be publicly accessible on the instance. On AWS, this can be done by opening inbound port in the security group. For local installations, the router need to be configured to bypass symmetric NAT for the port 8456 for mainnet and 8421 for testnet.
