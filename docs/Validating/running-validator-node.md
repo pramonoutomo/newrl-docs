@@ -48,7 +48,7 @@ You can get your node’s public info from the URL /get-node-info. Example: If n
 6. Pip and python3 venv installed. Installation steps available [here](https://pip.pypa.io/en/stable/installation/)
 
 ### Installation
-
+Note: Below are sample commands for testnet. Replace the keyword 'testnet' with desired network name if needed.
 ```bash
 git clone https://github.com/newrlfoundation/newrl.git
 scripts/install.sh testnet
