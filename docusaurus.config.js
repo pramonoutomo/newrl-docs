@@ -51,10 +51,15 @@ const config = {
             label: "Docs",
           },
           {
-            href: "https://github.com/newrlfoundation/newrl-docs/",
-            label: "Docs GitHub",
+            href: "https://github.com/newrlfoundation/newrl",
+            label: "Newrl GitHub",
             position: "right",
           },
+          {
+            href: "https://github.com/newrlfoundation/newrl-docs/",
+            label: "Newrl-docs GitHub",
+            position: "right",
+          }
         ],
       },
       footer: {
@@ -77,8 +82,8 @@ const config = {
             title: "More",
             items: [
               {
-                label: "GitHub",
-                href: "https://github.com/newrlfoundation/newrl-docs",
+                label: "Newrl - GitHub",
+                href: "https://github.com/newrlfoundation/newrl",
               },
             ],
           },
