@@ -31,8 +31,12 @@ Newrl Testnet Node - Ubuntu. Select the image
 
 
 ### Add Node wallet to chain
-Once the node is live, it's generated wallet public key can be obtained from executing `cat newrl/data_testnet/.auth.json` after doing an ssh into the machine. Alteratively from the URL `/get-node-info`. The node's wallet need to be added on the chain with the help of a custodian or as a linked wallet from [Newrl wallet app](https://wallet.newrl.net).
-Example: If node's public IP is 54.91.131.211, the url will be http://54.91.131.211:8421/get-node-info.
+Once the node is live, it's generated wallet public key can be obtained from executing `cat newrl/data_testnet/.auth.json` after doing an ssh into the machine. 
+
+The node's wallet need to be added on the chain with the help of a custodian or as a linked wallet from [Newrl wallet app](https://wallet.newrl.net).You can log into the wallet with a password specific to your machine/mobile. Inside, you can load your wallet from the node as obtained above (use only the json mentioned after “wallet” in the .auth.json file).
+
+You can get your node’s public info from the URL /get-node-info. Example: If node’s public IP is 54.91.131.211, the url will be http://54.91.131.211:8421/get-node-info. (edited) 
+
 
 ## From source code
 ### Prerequisites 
