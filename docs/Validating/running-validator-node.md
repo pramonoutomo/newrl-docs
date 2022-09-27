@@ -6,7 +6,8 @@ sidebar_position: 4
 
 ## Using AWS Image
 A Newrl node can be instantly spawned using the pre-built Newrl Image on AWS. It's currently available in Ohio and N.Virginia.
-At the launch time, the only configuration that needs to be specified is the security group to allow incoming connections on ports `8456` for mainnet and `8420` for testnet.
+Please not that for testnet image name is : `Newrl Testnet Node - Ubuntu`. 
+At the launch time, the only configuration that needs to be specified is the security group to allow incoming connections on ports `8456` for mainnet and `8421` for testnet.
 ![AWSNewrl](/img/aws_newrl_image.png)
 
 ### Add Node wallet to chain
