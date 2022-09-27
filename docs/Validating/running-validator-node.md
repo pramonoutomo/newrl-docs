@@ -51,13 +51,13 @@ You can get your node’s public info from the URL /get-node-info. Example: If n
 
 ```bash
 git clone https://github.com/newrlfoundation/newrl.git
-scripts/install.sh
+scripts/install.sh testnet
 ```
 
 ### Start the node
 ```bash
 screen -S newrl
-scripts/start.sh
+scripts/start.sh testnet
 ```
 Screen session is used to let the node run in background when terminal is closed. 
 
