@@ -25,7 +25,7 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           routeBasePath: "/",
           editUrl:
-            "https://github.com/newrlfoundation/newrl-doc/tree/master",
+            "https://github.com/newrlfoundation/newrl-docs/tree/master",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
