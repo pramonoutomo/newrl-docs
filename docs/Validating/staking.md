@@ -46,5 +46,24 @@ Staking is done using a transaction call to the Newrl Stake smart contract. The 
 ```
 
 Once staking transaction is submitted, the stake can be verified using the link 
-- Devnet `http://devnet.newrl.net:8421/sc-state?table_name=stake_ledger&contract_address=ctcdb91798f3022dee388b7ad55eeea527f98caee4&unique_column=wallet_address&unique_value={wallet_to_stake}'`
-- Testnet `http://archive1-testnet1.newrl.net:8421/sc-state?table_name=stake_ledger&contract_address=ctcdb91798f3022dee388b7ad55eeea527f98caee4&unique_column=wallet_address&unique_value={wallet_to_stake}`
+
+Note: Please replace the the value '0xa9ce833fa8deaf8e7f21f493335beff4386c5c22' with your own node wallet address. 
+- Devnet `http://devnet.newrl.net:8421/sc-state?table_name=stake_ledger&contract_address=ct1111111111111111111111111111111111111115&unique_column=wallet_address&unique_value=0xa9ce833fa8deaf8e7f21f493335beff4386c5c22`
+- Testnet `http://archive1-testnet1.newrl.net:8421/sc-state?table_name=stake_ledger&contract_address=ct1111111111111111111111111111111111111115&unique_column=wallet_address&unique_value=0xa9ce833fa8deaf8e7f21f493335beff4386c5c22`
+
+Below is the sample response
+
+```sh
+{
+"status": "SUCCESS",
+"data": [
+"ct1111111111111111111111111111111111111115",
+"piaebd403e1864223c07413075054c1936d6ad17dd",
+"0xa9ce833fa8deaf8e7f21f493335beff4386c5c22",
+800000000000,
+1664279562000,
+"[{\"0xa9ce833fa8deaf8e7f21f493335beff4386c5c22\": 100000000000}, {\"0xce4b9b89efa5ee6c34655c8198c09494dc3d95bb\": 700000000000}]"
+]
+}
+```
+Here, fourth parameter of data list "800000000000" is the amount of tokens staked.
