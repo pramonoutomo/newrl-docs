@@ -31,7 +31,11 @@ Newrl Testnet Node - Ubuntu. Select the image
 
 
 ### Add Node wallet to chain
-Once the node is live, it's generated wallet key can be obtained by running `python3 scripts/show_wallet.py` into the terminal. 
+Once the node is live, it's generated wallet key can be obtained by running the below command. 
+```bash
+cd newrl
+python3 scripts/show_wallet.py
+```
 ![ShowWallet](/img/show_wallet.png)
 
 The node's wallet need to be added on the chain with the help of a custodian or as a linked wallet from [Newrl wallet app](https://wallet.newrl.net).You can log into the wallet with a password specific to your machine/mobile. Inside, you can load your wallet from the node as obtained above (use only the json mentioned after “wallet” in the .auth.json file).
@@ -52,6 +56,7 @@ You can get your node’s public info from the URL /get-node-info. Example: If n
 Note: Below are sample commands for testnet. Replace the keyword 'testnet' with desired network name if needed.
 ```bash
 git clone https://github.com/newrlfoundation/newrl.git
+cd newrl
 scripts/install.sh testnet
 ```
 
