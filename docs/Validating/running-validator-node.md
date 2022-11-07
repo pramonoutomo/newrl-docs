@@ -67,4 +67,11 @@ scripts/start.sh testnet
 ```
 Screen session is used to let the node run in background when terminal is closed. 
 
+### Import existing wallet
+```
+python3 scripts/import_wallet.py 
+Enter environment[mainnet/testnet/devnet]: mainnet
+```
+Paste the existing wallet.
+
 Note: The port 8456 for mainnet and 8421 if testnet should be publicly accessible on the instance. On AWS, this can be done by opening inbound port in the security group. For local installations, the router need to be configured to bypass symmetric NAT for the port 8456 for mainnet and 8421 for testnet.
