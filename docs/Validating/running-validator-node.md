@@ -75,3 +75,22 @@ Enter environment[mainnet/testnet/devnet]: mainnet
 Paste the existing wallet.
 
 Note: The port 8456 for mainnet and 8421 if testnet should be publicly accessible on the instance. On AWS, this can be done by opening inbound port in the security group. For local installations, the router need to be configured to bypass symmetric NAT for the port 8456 for mainnet and 8421 for testnet.
+
+### Update the Node software
+
+#### Nodes created using AWS image
+
+Nodes created using AWS image can be update by mearely rebooting the instance from AWS console.
+
+
+### Nodes created from source
+
+Follow the steps to update nodes created from source
+
+
+1. Login to screen session and stop the process by pressing Ctrl + C. Sometimes the process need to be force killed by running `pkill -9 python` outside of screen
+2. ```
+    cd newrl
+    scripts/install.sh mainnet
+    scripts/start.sh mainnet --fullnode
+    ```
